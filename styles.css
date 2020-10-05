@@ -1,0 +1,33 @@
+.bg{
+    background: no-repeat fixed;
+}
+
+.boxes{
+    height: 25px;
+    width: 100px;
+}
+
+.center{
+    text-align: center;
+    margin: auto;
+}
+
+.sidebar {
+    height: 100%;
+    width: 210px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #1d1c1c;
+    padding-top: 10px;
+}
+
+.square{
+    height: 50px;
+    width: 50px;
+}
+
+.white{
+    color: white;
+}
