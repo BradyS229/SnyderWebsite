@@ -7,7 +7,7 @@ function gradient(){
     a = document.getElementById("direction").value;
 
     //'-moz-linear-gradient(' + a + ', ' + x + ', ' + y + ')';
-    let s = '-moz-linear-gradient(' + a;
+    let s = 'linear-gradient(' + a;
     for(let i = 0; i < colorCount; i++){
         let d = 'color' + i;
         s = s + ', ' + document.getElementById(d).value;
@@ -17,16 +17,16 @@ function gradient(){
     let p = document.getElementById("preMade").value;
     switch (p){
         case 'Default':
-            s = '-moz-linear-gradient(' + a + ', ' + '#2a2a72' + ', ' + '#009ffd' + ')';
+            s = 'linear-gradient(' + a + ', ' + '#2a2a72' + ', ' + '#009ffd' + ')';
             break;
         case 'Rainbow':
-            s = '-moz-linear-gradient(' + a + ', ' + 'red' + ', ' + 'orange' + ', ' + 'yellow' + ', ' + 'green' + ', ' + 'blue' + ', ' + 'purple' + ')';
+            s = 'linear-gradient(' + a + ', ' + 'red' + ', ' + 'orange' + ', ' + 'yellow' + ', ' + 'green' + ', ' + 'blue' + ', ' + 'purple' + ')';
             break;
         case 'Cotton Candy':
-            s = '-moz-linear-gradient(' + a + ', ' + 'lightskyblue' + ', ' + 'lightpink' + ')';
+            s = 'linear-gradient(' + a + ', ' + 'lightskyblue' + ', ' + 'lightpink' + ')';
             break;
         case 'Splatoon':
-            s = '-moz-linear-gradient(' + a + ', ' + 'hotpink' + ', ' + 'greenyellow' + ')';
+            s = 'linear-gradient(' + a + ', ' + 'hotpink' + ', ' + 'greenyellow' + ')';
             break;
     }
 
